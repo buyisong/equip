@@ -24,7 +24,7 @@
 
 		body {
 			height: 100vh;
-			background: url("../templates/4.jpg")center no-repeat;
+			background: url("/static/4.jpg")center no-repeat;
             background-size:100% 100%;
             opacity:0.7;
             filter:alpha(opacity=70);
@@ -181,13 +181,13 @@
 <body>
 	<div class="loginBox" style="color: black" >
 		<h2>login</h2>
-		<form action="">
+		<form action="" method="post">
 			<div class="item">
-				<input type="text" required>
+				<input type="text" name="user" required>
 				<label for="">userName</label>
 			</div>
 			<div class="item">
-				<input type="password" required>
+				<input type="password" name="passwd" required>
 				<label for="">password</label>
 			</div>
 			<button class="btn">login

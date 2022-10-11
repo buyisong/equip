@@ -1,0 +1,178 @@
+.index-lm-title {
+    text-align: center;
+    padding: 67px 0 40px;
+}
+
+.index-lm-title h2 {
+    font-size: 37px;
+    letter-spacing: 10px;
+    margin-bottom: 16px;
+}
+
+.index-lm-title p {
+    font-size: 20px;
+}
+
+.lanmu {
+    padding: 0 50px;
+    position: relative;
+}
+
+.lanmu-list {
+    margin: 0 30px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 0
+}
+
+.arrow {
+    display: flex;
+}
+
+.arrow:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.arrow span {
+    align-self: center;
+}
+
+.arrow .icon {
+    display: block;
+    width: 60px;
+    text-align: center;
+    font-size: 40px;
+    color: #696969
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 50px;
+    height: 100%;
+    background-color: #2f2f2f;
+    color: #696969;
+    background-image: none;
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next .icon,
+.swiper-button-prev .icon {
+    font-size: 26px;
+    width: 26px;
+    height: 26px;
+    display: block;
+    height: 26px;
+    width: 100%;
+    justify-content: center;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    right: 0 !important;
+    top: 0;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    left: 0px;
+    top: 0;
+}
+
+.lanmu-list .left-arrow {
+    width: 3%;
+    height: 600px;
+    float: left;
+    background-color: #2f2f2f;
+}
+
+.lanmu-list .right-arrow {
+    width: 3%;
+    height: 600px;
+    float: right;
+    background-color: #2f2f2f;
+}
+
+.index-marm {
+    height: 40px;
+}
+
+.swiper-slide h2 {
+    position: absolute;
+    top: 8.6%;
+    left: 10%;
+    font-size: 22px;
+}
+
+.swiper-slide p {
+    position: absolute;
+    top: 16%;
+    left: 10%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    margin-top: 0;
+}
+
+.index-more {
+    display: block;
+    position: absolute;
+    width: 110px;
+    top: 110%;
+    left: 50%;
+    margin-left: -55px;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 5px 0;
+    background-color: #fff;
+    opacity: 0;
+    color: #000;
+    transition: all ease-in .4s;
+}
+
+.swiper-slide:hover .index-more {
+    top: 82%;
+    opacity: 0.8;
+}
+
+.swiper-slide:hover img {
+    opacity: 0.5;
+}
+
+.swiper-slide:hover a {
+    color: #fff;
+}
+
+@media (max-width:992px) {
+    .swiper-slide h2 {
+        position: absolute;
+        top: 7.8%;
+        left: 10%;
+        font-size: 17px;
+    }
+    .swiper-slide p {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        font-size: 13px;
+    }
+    .index-lm-title h2 {
+        font-size: 27px;
+    }
+}

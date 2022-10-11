@@ -137,3 +137,4 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = "app_login.User"
 SILENCED_SYSTEM_CHECKS = ['fields.E300', 'fields.E307']
+
