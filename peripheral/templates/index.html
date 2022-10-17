@@ -46,8 +46,17 @@
                     <div class="top-icon">
                         <span class="icon iconfont icon-sousuo" id="search"></span>
                         <!--  -->
-                        <a href="/login/" style="color: white; border-radius: 5px;text-align:center;
+                        {% if not msg %}
+                            <a href="login/" style="color: white; border-radius: 5px;text-align:center;
                         line-height:35px; float: right; height: 35px; width: 100px;">登录</a>
+                        {% elif msg %}
+                            <a href="/center/" style="color: white; border-radius: 5px;text-align:center;
+                        line-height:35px; float: right; height: 35px; width: 100px;">{{ user }}</a>
+                            <a href="/logout/" style="color: white; border-radius: 5px;text-align:center;
+                        line-height:35px; float: right; height: 35px; width: 100px;">退出</a>
+
+                        {% endif %}
+
                     </div>
                 </div>
             </div>
@@ -122,25 +131,25 @@
             <div class="lanmu-list swiper-container" style="overflow: hidden;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href='/?m=home&c=Lists&a=index&tid=21'>
+                        <a href='/mouse/'>
                             <h2>游戏鼠标</h2>
                             <p>GAME MOUSE</p>
                             <img src="/static/uploads/allimg/20210427/1-21042F94206311.jpg" alt="" class="img-responsive"><span class="index-more">了解更多→</span></a>
                     </div>
                     <div class="swiper-slide">
-                        <a href='/?m=home&c=Lists&a=index&tid=20'>
+                        <a href='/keyboard/'>
                             <h2>游戏键盘</h2>
                             <p>GAME KEYBOARD</p>
                             <img src="/static/uploads/allimg/20210426/1-2104261F3333M.jpg" alt="" class="img-responsive"><span class="index-more">了解更多→</span></a>
                     </div>
                     <div class="swiper-slide">
-                        <a href='/?m=home&c=Lists&a=index&tid=22'>
+                        <a href='/headsets/'>
                             <h2>游戏耳机</h2>
                             <p>GAME HEADSETS</p>
                             <img src="/static/uploads/allimg/20210426/1-2104261F342c6.jpg" alt="" class="img-responsive"><span class="index-more">了解更多→</span></a>
                     </div>
                     <div class="swiper-slide">
-                        <a href='/?m=home&c=Lists&a=index&tid=54'>
+                        <a href=''>
                             <h2>显示器</h2>
                             <p>BLUETOOTH HEADSET</p>
                             <img src="/static/uploads/allimg/20210823/1-210R3135202919.jpg" alt="" class="img-responsive"><span class="index-more">了解更多→</span></a>

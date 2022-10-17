@@ -182,22 +182,33 @@
 	<div class="loginBox" style="color: black" >
 		<h2>login</h2>
 		<form action="" method="post">
+            {% csrf_token %}
 			<div class="item">
 				<input type="text" name="user" required>
 				<label for="">userName</label>
 			</div>
+
 			<div class="item">
 				<input type="password" name="passwd" required>
 				<label for="">password</label>
+                <div style="color: red; font-size: 15px;">
+                {% if message%}
+            用户名或密码错误
+            {% endif %}
+            </div>
 			</div>
+
 			<button class="btn">login
 				<span></span>
 				<span></span>
-				<span></span>
-				<span></span>
 			</button>
-            <a href="" style="position: relative; left: 28px; top: 60px;">注册账号</a>
+     			<span></span>
+				<span></span>
+	       <a href="/register/" style="position: relative; left: 28px; top: 60px;">注册账号</a>
+            <a href="/edit/" style="position: relative; left: 28px; top: 60px;">忘记密码</a>
 		</form>
 	</div>
+
+
 </body>
 </html>

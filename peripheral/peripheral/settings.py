@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'app_center',
     'app_goods',
 
+
 ]
 
 

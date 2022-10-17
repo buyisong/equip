@@ -1,10 +1,9 @@
 from django.db import models
 
-
+__all__ = ['Address', 'OrderGoods', 'OrderMessage']
 # Create your models here.
 
 # 个人信息与修改密码
-
 
 
 # 地址表（Address）
@@ -28,6 +27,7 @@ class OrderMessage(models.Model):
     user_order_mes = models.ForeignKey(to="app_login.User", on_delete=models.CASCADE)
     address_order_mes = models.ForeignKey(to="Address", on_delete=models.CASCADE)
 
+
 # 订单商品表（OrderGoods）
 class OrderGoods(models.Model):
     og_count = models.IntegerField()
@@ -35,7 +35,3 @@ class OrderGoods(models.Model):
     og_talk = models.CharField(max_length=256)
     order_mes_goods = models.ForeignKey(to="OrderMessage", on_delete=models.CASCADE)
     sku_goods = models.ForeignKey(to="app_goods.GoodsSku", on_delete=models.CASCADE)
-
-
-
-
